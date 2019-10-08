@@ -1,0 +1,52 @@
+#скетч мэйки
+
+size (500,500)
+background (255,0,0)
+arc(255,70,100,100, PI, TWO_PI)
+fill (255,0,0)
+ellipse(230,50,20,20)
+ellipse(270,50,20,20)
+fill (255,255,255)
+rect (195,75,120,100)
+arc(190,125,100,100, PI,PI+HALF_PI)
+rect (145,128,40,20)
+arc(185,149,80,50, 0+HALF_PI, PI)
+arc(320,125,100,100, PI+HALF_PI,TWO_PI)
+rect (325,128,40,20)
+arc(325,150,80,50,0, 0+HALF_PI)
+rect (205,178,30,70)
+rect (270,178,30,70)
+
+
+
+#геометрические формы
+size (1000,1000)
+background (0,255,255)
+stroke (0,255,0)
+line (10,10,100,2)
+rect (30,30,100,80)
+fill (240,128,128)
+ellipse (30,150,50,50)
+fill (255,255,0)
+noStroke ()
+triangle(100,75, 100,150,137,125)
+fill(255,125,80)
+noStroke()
+
+
+#линии и прямоугольники от курсора + глобальные переменные
+
+x = 0
+y = 0
+
+def setup():
+    size(1000, 1000)
+
+def draw():
+    global x
+    global y
+    line(x, y, 100, 100)
+    x = x + 2
+    rect (mouseX, mouseY, 10, 20)
+    print (width)
+ 
