@@ -1,21 +1,37 @@
 #скетч мэйки
 
-size (500,500)
-background (255,0,0)
-arc(255,70,100,100, PI, TWO_PI)
-fill (255,0,0)
-ellipse(230,50,20,20)
-ellipse(270,50,20,20)
-fill (255,255,255)
-rect (195,75,120,100)
-arc(190,125,100,100, PI,PI+HALF_PI)
-rect (145,128,40,20)
-arc(185,149,80,50, 0+HALF_PI, PI)
-arc(320,125,100,100, PI+HALF_PI,TWO_PI)
-rect (325,128,40,20)
-arc(325,150,80,50,0, 0+HALF_PI)
-rect (205,178,30,70)
-rect (270,178,30,70)
+
+def setup():
+ size(500, 500) # это комментарий
+ background (255,0,0)
+ f = createFont("Arial", True) # True- сглаживание 
+ textFont(f, 30)   # 24 - размер текста 
+ 
+def draw():
+ fill(255, 255, 255)
+ rect (195,75,120,100)
+ f = createFont("Arial", True)  
+ textFont(f, 50)   # 24 - размер текста 
+ fill(255,255,255)
+ arc(255,70,100,100, PI, TWO_PI, PIE)
+ arc(190,125,100,100, PI,PI+HALF_PI, PIE)
+ rect (145,128,40,20)
+ arc(185,149,80,50, 0+HALF_PI, PI, PIE)
+ arc(320,125,100,100, PI+HALF_PI,TWO_PI, PIE)
+ rect (325,128,40,20)
+ arc(325,150,80,50,0, 0+HALF_PI, PIE)
+ rect (205,178,30,70)
+ rect (270,178,30,70)
+ ellipse(230,50,20,20)
+ ellipse(270,50,20,20)
+ fill (255,0,0)
+ ellipse(255,125,60,60)
+ fill (255,0,0)
+ f = createFont("Arial", True)  
+ textFont(f, 50)   # 24 - размер текста 
+ fill (255, 255, 255)
+ text("M", 235,145)
+
 
 
 
